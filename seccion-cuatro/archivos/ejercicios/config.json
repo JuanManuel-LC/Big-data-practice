@@ -1,0 +1,7 @@
+{
+  "ruta_entrada": "data/ventas.csv",
+  "ruta_salida": "data/resultado.json",
+  "umbral_minimo": 100.0,
+  "incluir_impuestos": true,
+  "tasa_impuesto": 0.21
+}

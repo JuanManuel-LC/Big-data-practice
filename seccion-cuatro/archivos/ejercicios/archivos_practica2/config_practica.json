@@ -1,0 +1,6 @@
+{
+  "ruta_entrada": "datos_practica/ventas.csv",
+  "ruta_salida": "datos_practica/resumen.json",
+  "umbral_minimo": 150.0,
+  "incluir_impuestos": true
+}
