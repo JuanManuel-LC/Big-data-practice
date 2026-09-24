@@ -1,8 +1,9 @@
 importe = float(input("Importe de la compra (€): "))
 es_vip = input("¿Tiene tarjeta VIP? (si/no): ")
 
-    
+# Si importe es mayor o igual que 200, 
 if importe >= 200:
+    # entonces el descuento base sera del 20%
     descuento_base = 0.20
 elif importe >= 100 and importe < 200:
     descuento_base = 0.10

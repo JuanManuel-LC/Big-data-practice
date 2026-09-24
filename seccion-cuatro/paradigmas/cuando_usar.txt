@@ -1,0 +1,5 @@
+▹ IMPERATIVO (for, if, variables): scripts simples, lógica de negocio clara paso a paso, debugging. Cuando quieres que cualquiera entienda el flujo.
+▹ OOP (objeto.metodo()): usar librerías como Pandas, manipular DataFrames, encadenar transformaciones legibles. No necesitas crear clases — solo USAR las que otros crearon.
+▹ FUNCIONAL (map, filter, lambda, comprehensions): transformaciones de datos sin efectos secundarios. PySpark, procesamiento de streams, situaciones donde no quieres modificar los datos originales.
+
+En la práctica diaria del trabajo con datos, mezclarás los tres estilos en el mismo script sin pensarlo: un for imperativo para recorrer archivos, una llamada OOP para leer con Pandas (pd.read_csv), y un filter funcional para limpiar valores nulos. Python te permite esa flexibilidad. Lo importante es que ahora SABES lo que estás haciendo en cada momento.

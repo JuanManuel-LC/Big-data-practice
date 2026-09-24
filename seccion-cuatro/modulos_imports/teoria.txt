@@ -1,0 +1,2 @@
+Que es un modulo?
+Un modulo en Python es simplemente un archivo .py. Eso es todo. Cuando creas "utils.py", acabas de crear un modulo llamado "utils". Cuando escribes "imports utils", Python busca ese archivo y te da acceso a todo lo que hay dentro: funciones, variables, clases.

@@ -1,0 +1,5 @@
+El tercer paradigma es la programación funcional. Su filosofía es radical: NUNCA modificar datos existentes. En vez de cambiar una lista, creas una NUEVA lista con los cambios. En vez de modificar un diccionario, creas uno NUEVO. Cada transformación produce algo nuevo sin tocar el original.
+
+Por qué alguien querría eso? Piensa en un pipeline de datos con 5 pasos. Si el paso 3 modifica los datos del paso 1, y luego el paso 5 necesita los datos originales... tienes un problema. La programación funcional evita esa clase de bugs: como nada se modifica, puedes encadenar transformaciones sin miedo a efectos secundarios. PySpark usa este principio al 100% — cada operación produce un DataFrame nuevo.
+
+La buena noticia: ya has usado programación funcional sin saberlo. Las list comprehensions SON programación funcional — crean una lista nueva a partir de otra sin modificar la original. sorted() ES funcional — devuelve una lista nueva en vez de modificar la existente. La diferencia con .sort() (que modifica la lista original) es exactamente la diferencia entre estilo funcional y estilo imperativo.

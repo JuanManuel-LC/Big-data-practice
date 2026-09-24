@@ -1,0 +1,1 @@
+Es el flujo de trabajo simplre, for, if, funciones. Es cuando cualquiera puede leer el codigo.
