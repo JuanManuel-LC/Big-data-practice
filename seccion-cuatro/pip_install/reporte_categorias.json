@@ -1,0 +1,17 @@
+{
+  "electrónica": {
+    "productos": 3,
+    "total": 1838.98,
+    "porcentaje": 82.0
+  },
+  "ropa": {
+    "productos": 2,
+    "total": 84.98,
+    "porcentaje": 3.8
+  },
+  "calzado": {
+    "productos": 2,
+    "total": 318.99,
+    "porcentaje": 14.2
+  }
+}
