@@ -1,0 +1,5 @@
+# Dependencias del proyecto pipeline-ventas
+pandas==2.1.4  # Manipulación de datos tabulares
+requests==2.31.0  # Llamadas HTTP a APIs
+python-dotenv==1.0.0  # Variables de entorno desde .env
+pytest==7.4.3  # Testing automatizado

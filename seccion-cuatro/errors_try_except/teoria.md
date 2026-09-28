@@ -28,3 +28,7 @@ Python tiene muchos tipos de excepciones. Cada una indica un problema diferente.
 ▹ UnicodeDecodeError — El archivo tiene una codificación diferente a la esperada
 
 ejemplo --> Archivo "./ejemplo1.py"
+
+## None: cuando una función no puede devolverte un resultado
+
+Hay un valor especial en Python que significa "aquí no hay nada": None. Es lo que devuelve una función cuando no puede darte un resultado — busca algo que no existe, lee un archivo que falla, recibe datos que no sirven. El contrato de una función que puede fallar es: devuelve el resultado si lo tiene, o None si no.

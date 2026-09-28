@@ -5,7 +5,7 @@
 
 # 2. NameError — Usas una variable que no existe
 # Causa: typo en el nombre, olvidaste definirla, scope incorrecto
-print(total_ventas)  # NameError: name 'total_ventas' is not defined
+#Sprint(total_ventas)  # NameError: name 'total_ventas' is not defined
 
 # 3. TypeError — Mezclas tipos incompatibles
 # Causa: sumar string + int, pasar argumento equivocado
