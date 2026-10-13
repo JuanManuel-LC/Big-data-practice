@@ -8,3 +8,6 @@
 ▹ EXPOSE: "Documenta que este contenedor escucha en este puerto". Es informativo — no abre el puerto realmente.
 
 El orden de las instrucciones en un Dockerfile IMPORTA MUCHO para el rendimiento. Regla de oro: pon las cosas que cambian MENOS frecuentemente arriba (instalar dependencias del sistema, pip install) y las que cambian MÁS frecuentemente abajo (copiar tu código). Así maximizas el cache.
+
+## Multi-stage builds: imágenes limpias de producción
+A veces necesitas herramientas pesadas para CONSTRUIR tu aplicación (compiladores, cabeceras de desarrollo, gcc) pero no las necesitas para EJECUTARLA. Un multi-stage build usa dos etapas: una para construir, otra para ejecutar. Solo la segunda acaba en la imagen final.
