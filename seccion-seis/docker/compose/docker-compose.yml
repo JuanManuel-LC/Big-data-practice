@@ -1,0 +1,27 @@
+# Archivo: docker-compose.yml - entorno multi-servicio
+
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: datos
+      POSTGRES_PASSWORD: secreto123
+      POSTGRES_DB: analytics
+    ports:
+      - "5432:5432"
+  
+  cache:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  app:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://datos:secreto123@db:5432/analytics
+      REDIS_URL: redis://cache:6379
+    depends_on: # Le dice a Docker que no arranque app hasta que db y cache esten levantados
+      - db
+      - cache
+    ports:
+     - "8000:8000"
