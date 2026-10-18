@@ -1,0 +1,9 @@
+# docker-compose.yml con BIND MOUNT para desarrollo
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./src:/app/src  # Tu carpeta local ---> Dentro del contenedor
+    ports:
+      - "8000:8000"
