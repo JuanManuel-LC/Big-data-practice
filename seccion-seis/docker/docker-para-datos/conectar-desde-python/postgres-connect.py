@@ -13,4 +13,4 @@ conn = psycopg2.connect(
 cursor = conn.cursor()
 cursor.execute("SELECT version();")
 print(f"PostgreSQL: {cursor.fetchone()[0]}")
-conn.clone()
+conn.close()
