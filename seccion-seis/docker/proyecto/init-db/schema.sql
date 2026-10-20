@@ -1,6 +1,6 @@
 -- Archivo: init-db/schema.sql
 
-CREATE TABLE IF NOT EXIST ventas_limpias (
+CREATE TABLE IF NOT EXISTS ventas_limpias (
     id SERIAL PRIMARY KEY,
     producto VARCHAR(100) NOT NULL,
     cantidad INTEGER NOT NULL CHECK (cantidad > 0),
