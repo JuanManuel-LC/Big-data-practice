@@ -23,3 +23,8 @@ Una base de datos relacional organiza la información en tablas. Cada tabla tien
 05. Clave foránea (FK): una columna que apunta a la PK de otra tabla. Es el enlace entre tablas.
 
 ## Anatomía de una consulta SQL
+
+▹ SELECT — lista las columnas que quieres ver en el resultado. Puedes poner * para "todas".
+▹ FROM — indica de qué tabla lees los datos. Solo una tabla por ahora (luego veremos JOINs).
+▹ WHERE — filtra filas que cumplen una condición. Es opcional: sin WHERE, obtienes TODAS las filas.
+▹ El punto y coma (;) al final indica que la consulta terminó.
